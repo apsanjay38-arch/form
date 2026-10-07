@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7fb">
+  <title>Create your account — Northstar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <aside class="brand-panel" aria-label="About Northstar">
+      <a class="brand" href="#top" aria-label="Northstar home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 2.8 19.4 12l9.8 4-9.8 3.7L16 29.2l-3.6-9.5L2.8 16l9.6-4L16 2.8Z" fill="currentColor"/><circle cx="24.7" cy="7.3" r="2.3" fill="currentColor"/></svg></span>
+        <span>northstar</span>
+      </a>
+
+      <div class="brand-copy">
+        <span class="eyebrow"><span class="eyebrow-dot"></span> YOUR NEXT CHAPTER STARTS HERE</span>
+        <h1>Make room for<br>what’s <span>next.</span></h1>
+        <p>A simpler way to bring your plans, people and progress together. Start with an account that’s yours.</p>
+      </div>
+
+      <div class="visual-card" aria-label="Your workspace, all in one place">
+        <div class="visual-card-top"><span class="mini-label">YOUR SPACE</span><span class="live-indicator">ALL IN SYNC</span></div>
+        <div class="orbit-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+          <div class="orbit-core"><svg viewBox="0 0 32 32" fill="none"><path d="M16 3 19 12l9 4-9 3-3 10-3-10-10-3 10-4 3-9Z" fill="currentColor"/></svg></div>
+          <span class="orbit-node node-one"></span><span class="orbit-node node-two"></span><span class="orbit-node node-three"></span>
+        </div>
+        <div class="card-caption"><div><strong>One place to move forward</strong><span>Keep every little win in view.</span></div><span class="arrow-icon" aria-hidden="true">↗</span></div>
+      </div>
+
+      <div class="brand-footer"><span>Thoughtfully made for your everyday.</span><span>01 <i></i> 03</span></div>
+      <div class="decorative-glow" aria-hidden="true"></div>
+    </aside>
+
+    <main class="form-panel" id="top">
+      <div class="mobile-brand"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 2.8 19.4 12l9.8 4-9.8 3.7L16 29.2l-3.6-9.5L2.8 16l9.6-4L16 2.8Z" fill="currentColor"/></svg></span> northstar</div>
+      <div class="form-content">
+        <div class="welcome-copy">
+          <span class="step-label">WELCOME TO NORTHSTAR <span>✳</span></span>
+          <h2>Good things start<br>with a <span>hello.</span></h2>
+          <p>Pick up where you left off, or create your free account.</p>
+        </div>
+
+        <div class="auth-card">
+          <div class="tab-bar" role="tablist" aria-label="Account access">
+            <button class="tab-button is-active" id="login-tab" type="button" role="tab" aria-selected="true" aria-controls="login-panel" data-tab="login">Log in</button>
+            <button class="tab-button" id="signup-tab" type="button" role="tab" aria-selected="false" aria-controls="signup-panel" data-tab="signup" tabindex="-1">Sign up</button>
+            <span class="tab-underline" aria-hidden="true"></span>
+          </div>
+
+          <div class="form-alert" id="form-alert" role="status" aria-live="polite" hidden></div>
+
+          <section class="form-panel-content" id="login-panel" role="tabpanel" aria-labelledby="login-tab">
+            <div class="panel-heading"><h3>Welcome back</h3><p>Enter your details to access your account.</p></div>
+            <form id="login-form" novalidate>
+              <div class="field-group">
+                <label for="login-email">Email address <span class="required-mark">*</span></label>
+                <input id="login-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required aria-describedby="login-email-error">
+                <span class="error" id="login-email-error"></span>
+              </div>
+              <div class="field-group">
+                <div class="label-row"><label for="login-password">Password <span class="required-mark">*</span></label><a class="text-link" href="#login-password" id="forgot-link">Forgot password?</a></div>
+                <div class="input-with-action"><input id="login-password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required aria-describedby="login-password-error"><button class="password-toggle" type="button" data-toggle="login-password" aria-label="Show password">Show</button></div>
+                <span class="error" id="login-password-error"></span>
+              </div>
+              <label class="check-row"><input type="checkbox" name="remember"><span class="custom-check" aria-hidden="true"></span><span>Remember me</span></label>
+              <button class="submit-button" type="submit"><span>Log in</span><span class="button-arrow" aria-hidden="true">↗</span></button>
+            </form>
+            <p class="switch-prompt">New to Northstar? <button type="button" class="inline-switch" data-switch="signup">Create an account</button></p>
+          </section>
+
+          <section class="form-panel-content" id="signup-panel" role="tabpanel" aria-labelledby="signup-tab" hidden>
+            <div class="panel-heading"><h3>Create your account</h3><p>A few details and you’re on your way.</p></div>
+            <form id="signup-form" novalidate>
+              <div class="field-grid">
+                <div class="field-group field-full">
+                  <label for="full-name">Full name <span class="required-mark">*</span></label>
+                  <input id="full-name" name="fullName" type="text" placeholder="e.g. Alex Morgan" autocomplete="name" required aria-describedby="full-name-error">
+                  <span class="error" id="full-name-error"></span>
+                </div>
+                <div class="field-group field-full">
+                  <label for="signup-email">Email address <span class="required-mark">*</span></label>
+                  <input id="signup-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required aria-describedby="signup-email-error">
+                  <span class="error" id="signup-email-error"></span>
+                </div>
+                <div class="field-group">
+                  <label for="phone">Phone number <span class="required-mark">*</span></label>
+                  <input id="phone" name="phone" type="tel" placeholder="+1 555 123 4567" autocomplete="tel" required aria-describedby="phone-error">
+                  <span class="error" id="phone-error"></span>
+                </div>
+                <div class="field-group">
+                  <label for="pin-code">PIN code <span class="required-mark">*</span></label>
+                  <input id="pin-code" name="pinCode" type="text" inputmode="numeric" placeholder="6-digit PIN" autocomplete="postal-code" maxlength="6" required aria-describedby="pin-code-error">
+                  <span class="error" id="pin-code-error"></span>
+                </div>
+                <div class="field-group field-full">
+                  <label for="signup-password">Create password <span class="required-mark">*</span></label>
+                  <div class="input-with-action"><input id="signup-password" name="password" type="password" placeholder="At least 8 characters" autocomplete="new-password" required aria-describedby="signup-password-error strength-caption"><button class="password-toggle" type="button" data-toggle="signup-password" aria-label="Show password">Show</button></div>
+                  <span class="error" id="signup-password-error"></span>
+                  <div class="strength-meter" aria-label="Password strength">
+                    <div class="strength-bars" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+                    <span id="strength-caption">Use 8+ characters with a number or symbol</span>
+                  </div>
+                </div>
+                <div class="field-group field-full">
+                  <label for="confirm-password">Confirm password <span class="required-mark">*</span></label>
+                  <div class="input-with-action"><input id="confirm-password" name="confirmPassword" type="password" placeholder="Re-enter your password" autocomplete="new-password" required aria-describedby="confirm-password-error"><button class="password-toggle" type="button" data-toggle="confirm-password" aria-label="Show password">Show</button></div>
+                  <span class="error" id="confirm-password-error"></span>
+                </div>
+              </div>
+              <div class="terms-wrap">
+                <label class="check-row terms-row"><input id="terms" name="terms" type="checkbox" required aria-describedby="terms-error"><span class="custom-check" aria-hidden="true"></span><span>I agree to the <a href="#terms" class="text-link">Terms of Service</a> and <a href="#privacy" class="text-link">Privacy Policy</a>.</span></label>
+                <span class="error" id="terms-error"></span>
+              </div>
+              <button class="submit-button" type="submit"><span>Create account</span><span class="button-arrow" aria-hidden="true">↗</span></button>
+            </form>
+            <p class="switch-prompt">Already have an account? <button type="button" class="inline-switch" data-switch="login">Log in</button></p>
+          </section>
+        </div>
+        <p class="security-note"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 7V5a4 4 0 0 1 8 0v2m-9 0h10v7H3V7Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><circle cx="8" cy="10.5" r=".8" fill="currentColor"/></svg> Your information is encrypted and secure.</p>
+      </div>
+      <footer class="form-footer"><span>© 2026 Northstar Studio</span><a href="#help">Need help?</a></footer>
+    </main>
+  </div>
+</body>
+</html>
